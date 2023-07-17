@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:valorant_app/core/inject/inject.dart';
-
-import 'modules/home/presenter/home_page.dart';
+import 'package:valorant_app/modules/main/presenter/main_page.dart';
 
 void main() {
   Locator.init();
@@ -19,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const HomePage(),
+      home: const MainPage(),
     );
   }
 }

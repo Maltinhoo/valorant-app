@@ -20,6 +20,9 @@ class HomeCubit extends Cubit<HomeState> {
   }
 
   Future<void> initialize() async {
+    if (isClosed) {
+      return;
+    }
     emit(HomeLoading());
     try {
       final agents = await getAgents();
